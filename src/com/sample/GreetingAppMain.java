@@ -17,9 +17,8 @@ public class GreetingAppMain {
             String greetingMessage = employee.greet();
             /** 挨拶文をコンソールに出力 */
             System.out.println(greetingMessage);
-        }
+        }   //
     }
-
     /**
      * 社員オブジェクトリストを生成します
      * @return 社員情報
@@ -27,9 +26,9 @@ public class GreetingAppMain {
     private static List<Employee> generateEmployes() {
 
         /** 田中太郎 */
-        Employee taro = new Employee("田中太郎", 28);
+        Employee taro = new Employee("田中太郎",28,"野球");
         /** 山田花子 */
-        Employee hanako = new Employee("山田花子", 20);
+        Employee hanako = new Employee("山田花子",20,"料理");
 
         return List.of(taro, hanako);
     }
