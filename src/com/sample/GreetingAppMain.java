@@ -23,12 +23,18 @@ public class GreetingAppMain {
      * 社員オブジェクトリストを生成します
      * @return 社員情報
      */
+    
     private static List<Employee> generateEmployes() {
 
         /** 田中太郎 */
-        Employee taro = new Employee("田中太郎",28,"野球");
+        Employee taro = new Employee("田中太郎", 28, "野球");
+
         /** 山田花子 */
-        Employee hanako = new Employee("山田花子",20,"料理");
+        Employee hanako = new Employee("山田花子", 20, "料理");
+
+        // 趣味を変更
+        taro.setHobby("スノーボード");
+        hanako.setHobby("手芸");
 
         return List.of(taro, hanako);
     }

@@ -6,7 +6,7 @@ package com.sample;
 public class Employee {
 
     /** 挨拶の定型文の定義 */
-    private final String MESSAGE_TEMPLATE = "こんにちは、%sです。%d歳です。趣味は%sです。";
+    private final String MESSAGE_TEMPLATE = "こんにちは、%sです。%d歳です。先日趣味が変わりまして%sに興味があります。";
 
     /** 社員名 */
     private String name;
@@ -47,8 +47,16 @@ public class Employee {
      * 趣味を取得します
      * @return hobby
      */
-    public String gethobby() {
+    public String getHobby() {
     	    return hobby;
+    }
+    
+    /**
+     * 趣味を変更します
+     * @param hobby 趣味
+     */
+    public void setHobby(String hobby) {
+        this.hobby = hobby;
     }
     
     /**
